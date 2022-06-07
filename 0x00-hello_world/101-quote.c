@@ -1,11 +1,12 @@
-#include <studio>
+#include <unistd.h>
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: 1 after printing the function
+ * Return: Always 1 (Success)
  */
 int main(void)
 {
-puts("\"and that piece of art is useful" - Dora Korpar, 2015-10-19");
-return (0);
+	char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, str1, 59);
+	return (1);
 }
